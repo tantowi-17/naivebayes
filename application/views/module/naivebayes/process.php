@@ -20,7 +20,7 @@
           <div class="col-md-12">
             <div class="card-box">
               <h4>Upload Dataset</h4>
-              <small><a href="<?= base_url(); ?>assets/naivebayes/dataaset-naivebayes-1.xlsx" target="_blank">Download example format .xlsx</a></small>
+              <small><a href="<?= base_url(); ?>assets/naivebayes/data_set_2023.xlsx" target="_blank">Download example format .xlsx</a></small>
               <br>
               <form enctype="multipart/form-data">
                 <input id="upload" type="file" name="files">
@@ -218,7 +218,15 @@
                       <?php
                       }
                       ?>
-                      <h4 class="card-title mb-2 text-white" align="center"><?= $prediksi; ?></h4>
+                      <h4 class="card-title mb-2 text-white" align="center">
+                        <?php if ($prediksi == "YA") {
+                        echo $prediksi. ", selemat anda cocok bekerja dibidang IT";
+                        } else {
+                          echo $prediksi. ", maaf anda tidak cocok bekerja dibidang IT";
+
+                        }?>
+                      
+                      </h4>
                     </div>
                     <?php
                     foreach ($this->naivebayes->resall as $key => $val) {

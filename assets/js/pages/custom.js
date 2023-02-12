@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  var base_url = "http://localhost:8888/naivebayes/";
+  // var base_url = "http://localhost:8888/naivebayes/"; // Dev
+  var base_url = "https://naive-bayes.dipa-website.my.id/" // Prod
   var global = [];
       var ExcelToJSON = function() {
         this.parseExcel = function(file) {
