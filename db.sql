@@ -57,3 +57,45 @@ DELIMITER ;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+
+CREATE TABLE master (
+    Janis_Kelamin VARCHAR(20),
+    Program_Studi VARCHAR(50),
+    Tahun_Lulus INT,
+    Cara_Cari_Kerja VARCHAR(50),
+    Lama_Waktu INT,
+    Jmlh_Perusahaan INT,
+    Jmlh_Respon_Perusahaan INT,
+    Bekerja VARCHAR(20),
+    Aktif_Cari_Kerja VARCHAR(20),
+    Jenis_Perusahaan VARCHAR(50),
+    Kemampuan_Ilmu_Disiplin VARCHAR(50),
+    Kemampuan_Diluar_Ilmu_Disiplin VARCHAR(50),
+    Pengetahuan_Umum VARCHAR(50),
+    Keterampilan_Internet VARCHAR(50),
+    Keterampilan_Komputer VARCHAR(50),
+    Berpikir_Kritis VARCHAR(50),
+    Keterampilan_Riset VARCHAR(50),
+    Keterampilan_Belajar VARCHAR(50),
+    Kemampuan_Komunikasi VARCHAR(50),
+    Bekerja_Dibawah_Tekanan VARCHAR(20),
+    Manajemen_Waktu VARCHAR(50),
+    Bekerja_Mandiri VARCHAR(20),
+    Keterampilan_Bekerjasama VARCHAR(50),
+    Pemecahan_Masalah VARCHAR(50),
+    Negosiasi VARCHAR(50),
+    Kemampuan_Analisis VARCHAR(50),
+    Toleransi VARCHAR(50),
+    Kemampuan_Adaptasi VARCHAR(50),
+    Loyalitas VARCHAR(50),
+    Bekerja_Dengan_Orang VARCHAR(20),
+    Kepemimpinan VARCHAR(50),
+    Tanggung_Jawab VARCHAR(50),
+    Inisiatif VARCHAR(50),
+    Manajemen_Project VARCHAR(50),
+    Kemampuan_Ide VARCHAR(50),
+    Kemampuan_Dokumentasi VARCHAR(50),
+    Kemampuan_Belajar VARCHAR(50),
+    Bidang_Kerja VARCHAR(50)
+);
