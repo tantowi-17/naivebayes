@@ -1,11 +1,11 @@
 $(document).ready(function () {
-  let base_url = "";
+    let base_url = "";
 
-  if (window.location.hostname === "localhost") {
-    base_url = window.location.origin + "/naivebayes/"; // Dev
-  } else {
-    base_url =  window.location.origin; // Prod
-  }
+    if (window.location.hostname === "localhost") {
+        base_url = window.location.origin + "/naivebayes/"; // Dev
+    } else {
+        base_url = window.location.origin; // Prod
+    }
     var global = [];
     var ExcelToJSON = function () {
         this.parseExcel = function (file) {
@@ -67,4 +67,18 @@ $(document).ready(function () {
         document.getElementById('upload').addEventListener('change', handleFileSelect, false);
     }
 
+
+    // Update background results
+    var _resultPredict = $('.js-result-predict');
+    if (_resultPredict.length > 0) {
+        var _predict = _resultPredict.data('predct');
+        var _bg = _resultPredict.closest('.js-bg');
+        if (_predict === 'ya') {
+            _bg.addClass('bg-primary');
+            _bg.removeClass('bg-danger');
+        } else {
+            _bg.removeClass('bg-primary');
+            _bg.addClass('bg-danger');
+        }
+    }
 });

@@ -198,7 +198,7 @@
                       </p>
                     </div>
                     <h4>Hasil</h4>
-                    <div class="card card-body bg-primary text-white">
+                    <div class="card card-body bg-primary text-white js-bg">
                       <h4 class="card-title mb-2 text-white">Hasil Prediksi</h4>
                       <?php
                       $hasil = $result;
@@ -218,11 +218,11 @@
                       <?php
                       }
                       ?>
-                      <h4 class="card-title mb-2 text-white" align="center">
-                        <?php if ($prediksi == "YA") {
-                        echo $prediksi. ", selemat anda cocok bekerja dibidang IT";
+                      <h4 class="card-title mb-2 text-white js-result-predict" align="center" data-predct="<?php echo $prediksi ?>">
+                        <?php if ($prediksi == "ya") {
+                        echo "Selemat anda LAYAK sebagai calon nasabah Kredit Perumahan.";
                         } else {
-                          echo $prediksi. ", maaf anda tidak cocok bekerja dibidang IT";
+                          echo "Maaf anda TIDAK LAYAK sebagai calon nasabah Kredit Perumahan!";
 
                         }?>
                       
