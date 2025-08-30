@@ -53,3 +53,12 @@ $route['default_controller'] = 'home';
 $route['login'] = 'auth/login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['naivebayes/dashboard'] = 'NaiveBayes/index';
+$route['naivebayes/process'] = 'NaiveBayes/process';
+$route['naivebayes/history'] = 'NaiveBayes/history';
+
+$route['naivebayes/savedata'] = 'Operation/savedata';
+$route['naivebayes/delete'] = 'Operation/delete';
+$route['naivebayes/deleteall'] = 'Operation/deleteall';
+$route['naivebayes/printhistory'] = 'Operation/printhistory';
