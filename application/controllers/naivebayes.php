@@ -29,17 +29,17 @@ class NaiveBayes extends CI_Controller
           array(
             "name" => "Dashboard",
             "icon" => "remixicon-dashboard-line",
-            "link" => base_url() . "naivebayes"
+            "link" => base_url() . "NaiveBayes"
           ),
           array(
             "name" => "Naive Bayes",
             "icon" => "remixicon-honour-line",
-            "link" => base_url() . "naivebayes/process"
+            "link" => base_url() . "NaiveBayes/process"
           ),
           // array(
           //     "name"=>"History Prediksi",
           //     "icon"=>"remixicon-honour-line",
-          //     "link"=>base_url()."naivebayes/history"
+          //     "link"=>base_url()."NaiveBayes/history"
           // ),
           array(
             "name" => "Logout",
@@ -67,7 +67,6 @@ class NaiveBayes extends CI_Controller
     $var['footer'] = $this->footer;
     $this->load->view('main', $var);
   }
-
   /**
    * proses data set naive bayes
    */

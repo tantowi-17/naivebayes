@@ -20,7 +20,7 @@
           <div class="col-md-12">
             <div class="card-box">
               <h4>Upload Dataset</h4>
-              <small><a href="<?= base_url(); ?>assets/naivebayes/data_set_2023.xlsx" target="_blank">Download example format .xlsx</a></small>
+              <small><a href="<?= base_url(); ?>assets/naivebayes/data_set_cleaning.xlsx" target="_blank">Download example format .xlsx</a></small>
               <br>
               <form enctype="multipart/form-data">
                 <input id="upload" type="file" name="files">
