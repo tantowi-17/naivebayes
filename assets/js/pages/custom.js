@@ -24,7 +24,7 @@ $(document).ready(function () {
                     if (global.length > 0) {
                         var index = global[0];
                         index = Object.keys(index);
-                        $.post(base_url + 'operation/savedata', {data: global, index: index}, function (data, status) {
+                        $.post(base_url + '/operation/savedata', {data: global, index: index}, function (data, status) {
                             if (status == "success") {
                                 location.reload();
                             }

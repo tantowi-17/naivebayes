@@ -14,7 +14,7 @@ class Auth extends CI_Controller {
 				if($data['user_name']=="admin"&&$data['user_password']=="admin"){
 					$data['login'] = true;
 					$this->session->set_userdata('login', $data);
-					redirect("naivebayes");
+					redirect("NaiveBayes");
 				}
         redirect("home");
     }
